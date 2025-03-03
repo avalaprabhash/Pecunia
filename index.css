@@ -2,10 +2,14 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
+
 #home {
     font-size: 20px;
 }
+
 .container {
     display: flex;
     align-items: center;
@@ -25,15 +29,32 @@ html, body {
     text-align: center;
 }
 
-/* Increase the size of the icons and add cursor pointer */
-.fa-solid {
-    font-size: 2em; /* Adjust the size as needed */
-    cursor: pointer; /* Add cursor pointer */
+.fa-solid, .fa-brands {
+    font-size: 2em; 
+    cursor: pointer; 
 }
 
-/* Increase the size of the heading */
 h1 {
-    font-size: 3em; /* Adjust the size as needed */
+    font-size: 3em; 
 }
-gvmc
-Fruit and nut
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(178, 61, 61);
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+.about-us, .follow-us, .contact-us {
+    flex: 1;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
