@@ -111,12 +111,12 @@ p{
     font-size: 30px;
     margin-left: 200px;
 }
-/* Initially, the menu is displayed */
+
 .menu {
     display: block;
 }
 
-/* Optionally, add an animation or transition */
+
 .menu {
     transition: transform 0.3s ease-out;
 }
