@@ -20,6 +20,10 @@
             <i class="fa-solid fa-bars"></i>
         </div>
     </div>
+    <div class="content">
+        <h2>Pecunia serves as a universal medium of exchange, simplifying trade and economic transactions.</h2>
+        <img src="pexels-misterfotofreak-6484708-removebg-preview.png" alt="error" class="animated-image">
+    </div>
     <div id="menu" class="menu">
         <i class="bi bi-x-circle-fill" id="close"></i>
         <p>Countries</p>
@@ -38,28 +42,27 @@
 
         function toggleMenu() {
             const menu = document.getElementById('menu');
-            menu.style.display = 'block';
             menu.classList.toggle('open');
-            
         }
-        // Select the close icon and the menu
-const closeIcon = document.getElementById('close');
-const menu = document.getElementById('menu');
 
-// Add an event listener to the close icon
-closeIcon.addEventListener('click', () => {
-    // Hide the menu when the close icon is clicked
-    menu.style.display = 'none';
-});
+        // Select the close icon and the menu
+        const closeIcon = document.getElementById('close');
+        const menu = document.getElementById('menu');
+
+        // Add an event listener to the close icon
+        closeIcon.addEventListener('click', () => {
+            // Hide the menu when the close icon is clicked
+            menu.classList.remove('open');
+        });
     </script>
     <div class="footer">
         <div class="footer-content">
             <div class="about-us">
-                <h2>About us</h2>
+                <h3>About us</h3>
                 <h4>Global@currency</h4>
             </div>
             <div class="follow-us">
-                <h2>Follow us</h2>
+                <h3>Follow us</h3>
                 <div class="social-media">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i>
@@ -68,7 +71,7 @@ closeIcon.addEventListener('click', () => {
                 </div>
             </div>
             <div class="contact-us">
-                <h2>Contact us</h2>
+                <h3>Contact us</h3>
                 <div class="contact-details">
                     <i class="fa-solid fa-phone"></i>
                     <h4>+91 7999979999</h4>
