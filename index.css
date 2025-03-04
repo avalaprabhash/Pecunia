@@ -37,7 +37,11 @@ html, body {
 h1 {
     font-size: 3em; 
 }
-
+p{
+    font-size: 2em;
+    color: rgb(68, 247, 68);
+    padding-left: 25px;
+}
 .menu {
     position: fixed;
     top: 0;
