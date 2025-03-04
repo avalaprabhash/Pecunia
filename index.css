@@ -4,12 +4,29 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    font-family: 'Open Sans';
+    /* background-color:#00004d; */
 }
-
 #home {
+    padding-left: 50px;
     font-size: 20px;
 }
-
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.animated-image{
+    width: 500px;
+    animation: spin 5s linear infinite;
+}
 .container {
     display: flex;
     align-items: center;
@@ -17,7 +34,9 @@ html, body {
     height: 100px;
     box-sizing: border-box;
     padding: 10px;
-    background-color: rgb(68, 247, 68);
+    color: white;
+    border-radius: 10px;
+    background-color: #000047;
 }
 
 .Home {
@@ -36,12 +55,27 @@ html, body {
 
 h1 {
     font-size: 3em; 
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    display: inline-block;
 }
-p{
+h2 {
+    font-size: 2em; 
+    color:black;
+    border: solid 2px black;
+    border-radius: 30px;
+    border-top-width: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+p {
     font-size: 2em;
     color: rgb(68, 247, 68);
     padding-left: 25px;
 }
+
 .menu {
     position: fixed;
     top: 0;
@@ -74,12 +108,16 @@ p{
 .footer {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    background-color:silver;
+    padding-bottom: 70px;
+    color: white;
     width: 100%;
     box-sizing: border-box;
     margin-top: auto;
-    height: 25%;
+    height: 15%;
+    border-radius: 10px;
+    background-color: #4848ffa5;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .footer-content {
@@ -87,6 +125,7 @@ p{
     justify-content: space-between;
     width: 100%;
     flex: 1;
+    
 }
 
 .about-us, .follow-us, .contact-us, .rights {
@@ -106,20 +145,14 @@ p{
     justify-content: center;
     gap: 15px;
 }
-.menu i{
+
+.menu i {
     color: white;
     font-size: 30px;
     margin-left: 200px;
 }
 
-.menu {
-    display: block;
-}
-
-
-.menu {
-    transition: transform 0.3s ease-out;
-}
+/* Initially, the menu is hidden */
 #menu {
     display: none;
 }
@@ -128,3 +161,9 @@ p{
     display: block;
 }
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Section {
+    padding-right: 50px;
+}
