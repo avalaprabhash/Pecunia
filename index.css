@@ -41,7 +41,7 @@ h1 {
 .menu {
     position: fixed;
     top: 0;
-    left: -250px;
+    right: -250px;
     width: 250px;
     height: 100%;
     background-color: #333;
@@ -64,7 +64,7 @@ h1 {
 }
 
 .menu.open {
-    left: 0;
+    right: 0;
 }
 
 .footer {
@@ -102,3 +102,25 @@ h1 {
     justify-content: center;
     gap: 15px;
 }
+.menu i{
+    color: white;
+    font-size: 30px;
+    margin-left: 200px;
+}
+/* Initially, the menu is displayed */
+.menu {
+    display: block;
+}
+
+/* Optionally, add an animation or transition */
+.menu {
+    transition: transform 0.3s ease-out;
+}
+#menu {
+    display: none;
+}
+
+#menu.open {
+    display: block;
+}
+
