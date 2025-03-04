@@ -15,13 +15,28 @@
         <div class="Header">
             <h1>PECUNIA</h1>
         </div>
-        <div class="Section" id="section-one">
+        <div class="Section" id="section-one" onclick="toggleMenu()">
             <i class="fa-solid fa-bars"></i>
         </div>
+    </div>
+    <div id="menu" class="menu">
+        <a href="countries.html">Countries</a>
+        <a href="australia.html">Australia</a>
+        <a href="china.html">China</a>
+        <a href="dubai.html">Dubai</a>
+        <a href="india.html">India</a>
+        <a href="japan.html">Japan</a>
+        <a href="usa.html">USA</a>
+        <a href="Uk.html">UK</a>
     </div>
     <script>
         function navigateHome() {
             window.location.href = 'index.html';
+        }
+
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('open');
         }
     </script>
     <div class="footer">
