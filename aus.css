@@ -4,10 +4,21 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    font-family: 'Open Sans';
+    /* background-color: #00004d; */
 }
 
 #home {
+    padding-left: 50px;
     font-size: 20px;
+}
+.main {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -17,7 +28,9 @@ html, body {
     height: 100px;
     box-sizing: border-box;
     padding: 10px;
-    background-color: rgb(28, 267, 28);
+    color: white;
+    background-color: #000047;
+    width: 100%;
 }
 
 .Home {
@@ -36,11 +49,31 @@ html, body {
 
 h1 {
     font-size: 3em; 
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    display: inline-block;
 }
-h2{
+
+h2 {
+    font-size: 2em; 
+    color: #ffffff;
+    text-shadow: 4px 4px 4px #6c4343;
+    text-decoration: wavy;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+p {
     font-size: 2em;
     color: rgb(68, 247, 68);
-    text-align: center;
+    padding-left: 25px;
 }
 
 .menu {
@@ -76,11 +109,13 @@ h2{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    background-color: silver;
+    color: #00004d;
     width: 100%;
     box-sizing: border-box;
     margin-top: auto;
-    height: 25%;
+    height: auto;
+    background-color: white; /* Add a semi-transparent background color */
+    backdrop-filter: blur(10px); /* Add blur effect */
 }
 
 .footer-content {
@@ -88,6 +123,22 @@ h2{
     justify-content: space-between;
     width: 100%;
     flex: 1;
+}
+
+#fb:hover {
+    color: #00004d;
+}
+
+#in:hover {
+    color: #00004d;
+}
+
+#x:hover {
+    color: #00004d;
+}
+
+#li:hover {
+    color: #00004d;
 }
 
 .about-us, .follow-us, .contact-us, .rights {
@@ -107,3 +158,141 @@ h2{
     justify-content: center;
     gap: 15px;
 }
+
+.menu i {
+    color: white;
+    font-size: 30px;
+    margin-left: 200px;
+}
+
+/* Initially, the menu is hidden */
+#menu {
+    display: none;
+}
+
+#menu.open {
+    display: block;
+}
+
+.Section {
+    padding-right: 50px;
+}
+
+.coin-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.coin {
+    border: solid 1px #00004d;
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+    margin: 15px;
+    border-style: hidden; 
+    color-scheme: dark;
+    background-color: #e6e6e6;  
+    transition: height 0.3s ease; /* Smooth transition for height change */
+}
+
+.coin img {
+    margin-left: 40px;
+    width: 80%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.5s; /* Smooth transition for transform */
+}
+
+.coin b {
+    justify-content: center;
+    margin-left: 10px;
+    display: none; /* Initially hide the <b> element */
+}
+
+.coin h3 {
+    margin-left: 10px;
+}
+
+.coin:hover {
+    height: auto; /* Adjust height when hovered */
+}
+
+.coin:hover b {
+    display: block; /* Show the <b> element when hovered */
+}
+
+/* Different transformations for different images */
+.coin:nth-child(1) img:hover {
+    transform: scale(1.2); /* Rotate the image */
+}
+
+.coin:nth-child(2) img:hover {
+    transform: scale(1.2); /* Scale the image */
+}
+
+.coin:nth-child(3) img:hover {
+    transform: scale(1.2); /* Translate the image */
+}
+
+.coin:nth-child(4) img:hover {
+    transform: scale(1.2); /* Skew the image horizontally */
+}
+
+.coin:nth-child(5) img:hover {
+    transform: scale(1.2); /* Rotate the image around the Y-axis */
+}
+
+.coin:nth-child(6) img:hover {
+    transform: scale(1.2); /* Flip the image horizontally */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .coin {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .coin {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Header h1 {
+        font-size: 2em;
+    }
+
+    .fa-solid, .fa-brands {
+        font-size: 1.5em;
+    }
+
+    .menu {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .coin img {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
