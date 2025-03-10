@@ -4,9 +4,12 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
+   
+   
 }
 
 #home {
+    padding-left: 50px;
     font-size: 20px;
 }
 
@@ -17,7 +20,8 @@ html, body {
     height: 100px;
     box-sizing: border-box;
     padding: 10px;
-    background-color: rgb(28, 267, 28);
+    color: white;
+    background-color: #000047;
 }
 
 .Home {
@@ -36,12 +40,18 @@ html, body {
 
 h1 {
     font-size: 3em; 
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    display: inline-block;
 }
-h2{
+
+p {
     font-size: 2em;
     color: rgb(68, 247, 68);
-    text-align: center;
+    padding-left: 25px;
 }
+
 .menu {
     position: fixed;
     top: 0;
@@ -71,15 +81,58 @@ h2{
     right: 0;
 }
 
+.coin-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    padding: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.coin {
+    flex: 1 1 calc(25% - 40px);
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.49);
+    padding: 10px;
+    border: 1px solid rgb(163, 124, 24);
+    border-radius: 20px;
+}
+
+.coin img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.coin-name, .coin-year, .coin-history {
+    color: red;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .footer {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    background-color: silver;
+    color: #00004d;
     width: 100%;
     box-sizing: border-box;
     margin-top: auto;
-    height: 25%;
+    height: auto;
+    background-color: white; /* Add a semi-transparent background color */
+    backdrop-filter: blur(10px); /* Add blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Add blur effect for Safari */
 }
 
 .footer-content {
@@ -87,6 +140,22 @@ h2{
     justify-content: space-between;
     width: 100%;
     flex: 1;
+}
+
+#fb:hover {
+    color: #00004d;
+}
+
+#in:hover {
+    color: #00004d;
+}
+
+#x:hover {
+    color: #00004d;
+}
+
+#li:hover {
+    color: #00004d;
 }
 
 .about-us, .follow-us, .contact-us, .rights {
@@ -105,4 +174,189 @@ h2{
     display: flex;
     justify-content: center;
     gap: 15px;
+}
+
+.menu i {
+    color: white;
+    font-size: 30px;
+    margin-left: 200px;
+}
+
+/* Initially, the menu is hidden */
+#menu {
+    display: none;
+}
+
+#menu.open {
+    display: block;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Section {
+    padding-right: 50px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .main {
+        width: 100%;
+        height: auto;
+    }
+
+    .animated-image {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Header {
+        margin-bottom: 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .animated-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .footer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us, .follow-us, .contact-us, .rights {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Header {
+        margin-bottom: 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .animated-image {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    .footer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us, .follow-us, .contact-us, .rights {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 5px;
+    }
+
+    .Header {
+        margin-bottom: 5px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .animated-image {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .footer {
+        height: auto;
+        padding: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us, .follow-us, .contact-us, .rights {
+        margin-bottom: 10px;
+    }
 }
