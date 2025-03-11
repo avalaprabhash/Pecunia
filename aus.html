@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Australian currency, including coins and notes.">
+    <meta name="keywords" content="Australia, currency, coins, notes, money">
+    <meta name="author" content="Pecunia">
     <title>Australia Currency</title>
     <link rel="stylesheet" href="aus.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="Home" id="home" onclick="navigateHome()">
+    <div class="container" role="banner">
+        <div class="Home" id="home" onclick="navigateHome()" aria-label="Home">
             <i class="fa-solid fa-house"></i>
         </div>
         <div class="Header">
             <h1>Australia Currency</h1>
         </div>
-        <div class="Section" id="section-one" onclick="toggleMenu()">
+        <div class="Section" id="section-one" onclick="toggleMenu()" aria-label="Menu">
             <i class="fa-solid fa-bars"></i>
         </div>
     </div>
-    <div id="menu" class="menu">
-        <i class="bi bi-x-circle-fill" id="close"></i>
+    <div id="menu" class="menu" role="navigation">
+        <i class="bi bi-x-circle-fill" id="close" aria-label="Close Menu"></i>
         <p>Countries</p>
         <a href="aus.html">Australia</a>
         <a href="china.html">China</a>
@@ -31,50 +34,110 @@
         <a href="usa.html">USA</a>
         <a href="Uk.html">UK</a>
     </div>
-    <div class="coin-info">
+    <div class="coin-info" role="main">
         <div class="coin">
-            <img src="1.png" alt="1 cent coin">
+            <img src="1.png" alt="1 cent coin" loading="lazy">
             <h3>1 cent coin</h3>
             <b>From 1966 until 1984, the obverse of the Australian one-cent coin featured the elegant portrait of Queen Elizabeth II, designed by the renowned artist Arnold Machin. In 1985, this portrait was updated to a version by the acclaimed sculptor Raphael Maklouf, which remained in place until the coin's withdrawal from circulation in 1992.
 
                 The reverse side of the coin is adorned with the intricate image of a feathertail glider (Acrobates pygmaeus), a charming gliding possum unique to the Australian states bordering the Pacific Ocean. This exquisite design was crafted by Stuart Devlin, the talented artist behind the reverses of all the original Australian decimal coins.</b>
         </div>
         <div class="coin">
-            <img src="2.png" alt="2 cent coin">
+            <img src="2.png" alt="2 cent coin" loading="lazy">
             <h3>2 cent coin</h3>
-            <b>From 1966 until 1984, the obverse of the Australian one-cent coin featured the elegant portrait of Queen Elizabeth II, designed by the renowned artist Arnold Machin. In 1985, this portrait was updated to a version by the acclaimed sculptor Raphael Maklouf, which remained in place until the coin's withdrawal from circulation in 1992.
+            <b>The Australian two-cent coin was introduced in 1966 and was the coin of the second-lowest denomination until it was withdrawn from circulation in 1992 (along with the one-cent piece). It is still counted as legal tender, but is subject to some restrictions, and two-cent coins are legal tender only up to the sum of 20 cents.
 
-                The reverse side of the coin is adorned with the intricate image of a feathertail glider (Acrobates pygmaeus), a charming gliding possum unique to the Australian states bordering the Pacific Ocean. This exquisite design was crafted by Stuart Devlin, the talented artist behind the reverses of all the original Australian decimal coins.</b>
+                A two-cent coin in 1966 would have a purchasing power equal to about 30c in 2022 values.</b>
         </div>
         <div class="coin">
-            <img src="5.png" alt="5 cent coin" id="5cent">
+            <img src="5.png" alt="5 cent coin" id="5cent" loading="lazy">
             <h3>5 cent coin</h3>
-            <b>From 1966 until 1984, the obverse of the Australian one-cent coin featured the elegant portrait of Queen Elizabeth II, designed by the renowned artist Arnold Machin. In 1985, this portrait was updated to a version by the acclaimed sculptor Raphael Maklouf, which remained in place until the coin's withdrawal from circulation in 1992.
+            <b>The Australian five-cent coin is the lowest-denomination circulating coin of the decimal Australian dollar introduced on 14 February 1966, replacing the pre-decimal sixpence. It has been the lowest-denomination coin in general circulation since the withdrawal of the one-cent and two-cent coins in 1992.
 
-                The reverse side of the coin is adorned with the intricate image of a feathertail glider (Acrobates pygmaeus), a charming gliding possum unique to the Australian states bordering the Pacific Ocean. This exquisite design was crafted by Stuart Devlin, the talented artist behind the reverses of all the original Australian decimal coins.</b>
+                Due to inflation, the purchasing power of the five-cent coin continues to drop, and as of 2018 represents 0.27% of the country's minimum hourly wage for workers age 21 or over.</b>
         </div>
         <div class="coin">
-            <img src="10.png" alt="10 cent coin">
+            <img src="10.png" alt="10 cent coin" loading="lazy">
             <h3>10 cent coin</h3>
-            <b>From 1966 until 1984, the obverse of the Australian one-cent coin featured the elegant portrait of Queen Elizabeth II, designed by the renowned artist Arnold Machin. In 1985, this portrait was updated to a version by the acclaimed sculptor Raphael Maklouf, which remained in place until the coin's withdrawal from circulation in 1992.
-
-                The reverse side of the coin is adorned with the intricate image of a feathertail glider (Acrobates pygmaeus), a charming gliding possum unique to the Australian states bordering the Pacific Ocean. This exquisite design was crafted by Stuart Devlin, the talented artist behind the reverses of all the original Australian decimal coins.</b>
+            <b>The Australian ten-cent coin is a coin of the decimal Australian dollar. When the dollar was introduced as half of an Australian pound on 14 February 1966, the coin inherited the specifications of the pre-decimal shilling; both coins were worth one twentieth of a pound and were called "bob". On introduction it was the fourth-lowest denomination coin. Since the withdrawal from circulation of the one and two cent coins in 1992, it has been the second-lowest denomination coin in circulation.</b>
         </div>
         <div class="coin">
-            <img src="20.png" alt="20 cent coin">
+            <img src="20.png" alt="20 cent coin" loading="lazy">
             <h3>20 cent coin</h3>
-            <b>From 1966 until 1984, the obverse of the Australian one-cent coin featured the elegant portrait of Queen Elizabeth II, designed by the renowned artist Arnold Machin. In 1985, this portrait was updated to a version by the acclaimed sculptor Raphael Maklouf, which remained in place until the coin's withdrawal from circulation in 1992.
-
-                The reverse side of the coin is adorned with the intricate image of a feathertail glider (Acrobates pygmaeus), a charming gliding possum unique to the Australian states bordering the Pacific Ocean. This exquisite design was crafted by Stuart Devlin, the talented artist behind the reverses of all the original Australian decimal coins.</b>
+            <b>The twenty-cent coin of the Australian decimal currency system was issued with conversion to decimal currency on 14 February 1966, replacing the florin which was worth two shillings, a tenth of a pound.</b>
         </div>
         <div class="coin">
-            <img src="50.png" alt="50 cent coin">
+            <img src="50.png" alt="50 cent coin" loading="lazy">
             <h3>50 cent coin</h3>
-            <b>From 1966 until 1984, the obverse of the Australian one-cent coin featured the elegant portrait of Queen Elizabeth II, designed by the renowned artist Arnold Machin. In 1985, this portrait was updated to a version by the acclaimed sculptor Raphael Maklouf, which remained in place until the coin's withdrawal from circulation in 1992.
-
-                The reverse side of the coin is adorned with the intricate image of a feathertail glider (Acrobates pygmaeus), a charming gliding possum unique to the Australian states bordering the Pacific Ocean. This exquisite design was crafted by Stuart Devlin, the talented artist behind the reverses of all the original Australian decimal coins.</b>
+            <b>The twelve-sided Australian fifty-cent coin is the third-highest denomination coin of the Australian dollar and the largest in terms of size in circulation. It is equal in size and shape to the Cook Island $5 coin, and both remain the only 12-sided coins in the southern hemisphere. It was introduced in 1969[5] to replace the round fifty-cent coin issued in 1966.</b>
         </div>
-    </div>
+        <div class="coin">
+            <img src="1d.png" alt="1 dollar coin" loading="lazy">
+            <h3>1 dollar coin</h3>
+            <b>The Australian one-dollar coin is the second most valuable circulation denomination coin of the Australian dollar after the two-dollar coin; there are also non-circulating legal-tender coins of higher denominations (five-, ten-, and two-hundred-dollar coins).</b>
+        </div>
+        <div class="coin">
+            <img src="2d.png" alt="2 dollar coin" loading="lazy">
+            <h3>2 dollar coin</h3>
+            <b>The Australian two-dollar coin is the highest-denomination circulating coin of the Australian dollar. It was first issued on 20 June 1988, having been in planning since the mid-1970s. It replaced the Australian two-dollar note due to having a longer circulatory life. The only "mint set only" year was 1991.</b>
+        </div>
+        <div class="coin">
+            <div class="note">
+            <img src="1db.jpg" alt="1 dollar note" loading="lazy">
+            <img src="1df.jpg" alt="1 dollar note" loading="lazy">
+            </div>
+            <h3>1 dollar note</h3>
+            <b>The Australian one-dollar note was introduced in 1966 due to decimalisation, to replace the 10-shilling note. The note was issued from its introduction in 1966 until its replacement by the one-dollar coin in 1984. Approximately 1.7 billion one-dollar notes were printed.</b>
+        </div>
+        <div class="coin">
+            <div class="note">
+            <img src="2df.jpg" alt="2 dollar note" loading="lazy">
+            <img src="2db.jpg" alt="2 dollar note" loading="lazy">
+            </div>
+            <h3>2 dollar note</h3>
+            <b>The Australian two-dollar note was introduced in 1966 due to decimalisation, to replace the £1 note which had similar green colouration. The note was issued from its introduction in 1966 until its replacement by the two-dollar coin in 1988.</b>
+        </div>
+        <div class="coin">
+            <div class="note">
+            <img src="5df.jpg" alt="5 dollar note" loading="lazy">
+            <img src="5db.jpg" alt="5 dollar note" loading="lazy">
+            </div>
+            <h3>5 dollar note</h3>
+            <b>The Australian five-dollar note was first issued on 29 May 1967 with a unique mauve color, filling a gap from the pre-decimal system. On 7 July 1992, the first polymer version was introduced to enhance durability and security. A major design update on 1 September 2016 featured Queen Elizabeth II</b>
+        </div>
+        <div class="coin">
+            <div class="note">
+            <img src="10df.jpg" alt="10 dollar note" loading="lazy">
+            <img src="10db.jpg" alt="10 dollar note" loading="lazy">
+            </div>
+            <h3>10 dollar note</h3>
+            <b>The Australian ten-dollar note was one of the four original decimal banknotes (excluding the Australian five-dollar note) that were issued when the currency was changed from the Australian pound to the Australian dollar on 14 February 1966. It replaced the Australian five-pound note, which included the same blue colouration. There have been four different issues of this denomination: a paper banknote; a commemorative hi-polymer note, to celebrate the bicentennial of Australian settlement (the first polymer banknote of its kind); the 1993–2017 polymer note; and from September 2017 a polymer note featuring a transparent window.</b>
+        </div>
+        <div class="coin">
+            <div class="note">
+            <img src="20df.jpeg" alt="20 dollar note" loading="lazy">
+            <img src="20db.jpeg" alt="20 dollar note" loading="lazy">
+            </div>
+            <h3>20 dollar note</h3>
+            <b>The Australian twenty-dollar note was issued when the currency was changed from the Australian pound to the Australian dollar on 14 February 1966. It replaced the £10 note which had similar orange colouration. There have been only three different issues of this denomination: a paper note which had a gradient of yellow and red, with a distinct orange background, and two designs of polymer note which can be recognised for their distinct red-orange colouration, and so it was nicknamed a "lobster". The first polymer note was issued on 31 October 1994 and the Next Generation polymer banknote was issued on 9 October 2019.</b>
+        </div>
+        <div class="coin">
+            <div class="note">
+            <img src="50df.jpg" alt="50 dollar note" loading="lazy">
+            <img src="50db.jpg" alt="50 dollar note" loading="lazy">
+            </div>
+            <h3>50 dollar note</h3>
+            <b>The Australian fifty-dollar note is an Australian banknote with a face value of fifty Australian dollars ($50). Since 1995 it has been a polymer banknote featuring portraits of Edith Cowan, first female member of an Australian parliament, and inventor and Australia's first published Aboriginal Australian author, David Unaipon. The $50 banknote is also called a "pineapple" given its bright yellow colour.</b>
+        </div>
+        <div class="coin">
+            <div class="note">
+            <img src="100df.jpeg" alt="100 dollar note" loading="lazy">
+            <img src="100db.jpg" alt="100 dollar note" loading="lazy">
+            </div>
+            <h3>100 dollar note</h3>
+            <b>The Australian one-hundred-dollar note was first issued in 1984 as a paper note. There have been two different issues of this denomination: initially a very light turquoise-blue paper note, and from May 1996, a green polymer note. Since the start of issue there have been six signature combinations. Two other combinations were not issued.</b>
+        </div>   
+        </div>
     <script>
         function navigateHome() {
             window.location.href = 'index.html';
@@ -106,7 +169,7 @@
             }
         }
     </script>
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         <div class="footer-content">
             <div class="about-us">
                 <h3>About us</h3>
@@ -115,16 +178,16 @@
             <div class="follow-us">
                 <h3>Follow us</h3>
                 <div class="social-media">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-facebook" aria-label="Facebook"></i>
+                    <i class="fa-brands fa-instagram" aria-label="Instagram"></i>
+                    <i class="fa-brands fa-twitter" aria-label="Twitter"></i>
+                    <i class="fa-brands fa-linkedin" aria-label="LinkedIn"></i>
                 </div>
             </div>
             <div class="contact-us">
                 <h3>Contact us</h3>
                 <div class="contact-details">
-                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-phone" aria-label="Phone"></i>
                     <h4>+91 7999979999</h4>
                 </div>
             </div>
