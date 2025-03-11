@@ -193,7 +193,12 @@ p {
     border-style: hidden; 
     color-scheme: dark;
     background-color: #e6e6e6;  
-    transition: height 0.3s ease; /* Smooth transition for height change */
+    transition: height 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for height and box-shadow */
+}
+
+.coin:hover {
+    height: auto; /* Adjust height when hovered */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 .coin img {
@@ -204,48 +209,29 @@ p {
     transition: transform 0.5s; /* Smooth transition for transform */
 }
 
+.coin:hover img {
+    transform: scale(1.2); /* Scale the image */
+}
+
 .coin b {
     justify-content: center;
     margin-left: 10px;
     display: none; /* Initially hide the <b> element */
 }
 
+.coin:hover b {
+    display: block;
+}
+
 .coin h3 {
     margin-left: 10px;
 }
 
-.coin:hover {
-    height: auto; /* Adjust height when hovered */
-}
-
-.coin:hover b {
-    display: block; /* Show the <b> element when hovered */
-}
-
 /* Different transformations for different images */
-.coin:nth-child(1) img:hover {
-    transform: scale(1.2); /* Rotate the image */
-}
-
-.coin:nth-child(2) img:hover {
+.coin img:hover {
     transform: scale(1.2); /* Scale the image */
 }
 
-.coin:nth-child(3) img:hover {
-    transform: scale(1.2); /* Translate the image */
-}
-
-.coin:nth-child(4) img:hover {
-    transform: scale(1.2); /* Skew the image horizontally */
-}
-
-.coin:nth-child(5) img:hover {
-    transform: scale(1.2); /* Rotate the image around the Y-axis */
-}
-
-.coin:nth-child(6) img:hover {
-    transform: scale(1.2); /* Flip the image horizontally */
-}
 
 /* Media Queries for responsiveness */
 @media (max-width: 1200px) {
@@ -295,4 +281,15 @@ p {
         margin-left: 0;
     }
 }
+.note{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.note img{
+    margin-top: 30px;
+    width: 200px;
+    height: 150px;
+}
+
 
