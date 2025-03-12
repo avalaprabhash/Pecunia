@@ -4,10 +4,23 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    font-family: 'Open Sans';
+    /* background-color: #00004d; */
+    background: linear-gradient(to right, #4a0249, #1d67b1);
+    background-size: cover;
 }
 
 #home {
+    padding-left: 50px;
     font-size: 20px;
+}
+.main {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -17,7 +30,8 @@ html, body {
     height: 100px;
     box-sizing: border-box;
     padding: 10px;
-    background-color: rgb(28, 267, 28);
+    color: white;
+    width: 100%;
 }
 
 .Home {
@@ -36,12 +50,33 @@ html, body {
 
 h1 {
     font-size: 3em; 
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    display: inline-block;
 }
-h2{
+
+h2 {
+    font-size: 2em; 
+    color: #ffffff;
+    text-shadow: 4px 4px 4px #6c4343;
+    text-decoration: wavy;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+p {
     font-size: 2em;
     color: rgb(68, 247, 68);
-    text-align: center;
+    padding-left: 25px;
 }
+
 .menu {
     position: fixed;
     top: 0;
@@ -75,11 +110,13 @@ h2{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    background-color: silver;
+    color: #ffffff;
     width: 100%;
     box-sizing: border-box;
     margin-top: auto;
-    height: 25%;
+    height: auto;
+    background: linear-gradient(to right, #510450, #567fa9); 
+    backdrop-filter: blur(10px); /* Add blur effect */
 }
 
 .footer-content {
@@ -87,6 +124,22 @@ h2{
     justify-content: space-between;
     width: 100%;
     flex: 1;
+}
+
+#fb:hover {
+    color: #00004d;
+}
+
+#in:hover {
+    color: #00004d;
+}
+
+#x:hover {
+    color: #00004d;
+}
+
+#li:hover {
+    color: #00004d;
 }
 
 .about-us, .follow-us, .contact-us, .rights {
@@ -106,3 +159,142 @@ h2{
     justify-content: center;
     gap: 15px;
 }
+
+.menu i {
+    color: white;
+    font-size: 30px;
+    margin-left: 200px;
+}
+
+/* Initially, the menu is hidden */
+#menu {
+    display: none;
+}
+
+#menu.open {
+    display: block;
+}
+
+.Section {
+    padding-right: 50px;
+}
+
+.coin-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.coin {
+    border: solid 1px #ffffff;
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+    margin: 15px;
+    border-style: hidden; 
+    color-scheme: dark;  
+    color: #ffffff;
+    transition: height 0.3s ease, box-shadow 0.3s ease; 
+    background: linear-gradient(to right, #9a1e98, #013366);
+    box-shadow: 0 8px 8px rgba(255, 255, 255, 0.2); 
+}
+
+.coin:hover {
+    height: auto; /* Adjust height when hovered */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background:transparent;
+    box-shadow: 0 8px 8px rgba(255, 255, 255, 0.2);
+}
+
+.coin img {
+    margin-left: 40px;
+    width: 80%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.5s; /* Smooth transition for transform */
+}
+
+.coin:hover img {
+    transform: scale(1.2); /* Scale the image */
+}
+
+.coin b {
+    justify-content: center;
+    margin-left: 10px;
+    display: none; /* Initially hide the <b> element */
+}
+
+.coin:hover b {
+    display: block;
+}
+
+.coin h3 {
+    margin-left: 10px;
+}
+
+/* Different transformations for different images */
+.coin img:hover {
+    transform: scale(1.2); /* Scale the image */
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .coin {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .coin {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Header h1 {
+        font-size: 2em;
+    }
+
+    .fa-solid, .fa-brands {
+        font-size: 1.5em;
+    }
+
+    .menu {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .coin img {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+.note{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.note img{
+    margin-top: 30px;
+    width: 200px;
+    height: 150px;
+}
+
+
