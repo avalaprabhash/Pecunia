@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japan Currency</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="japan.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -31,6 +31,64 @@
         <a href="usa.html">USA</a>
         <a href="Uk.html">UK</a>
     </div>
+    <div class="coin-info" role="main">
+        <div class="coin">
+            <img src="japcurr/1y.png" alt="1 yen coin" loading="lazy">
+            <h3>1 yen coin</h3>
+            <b>The 1-yen coin (一円硬貨, Ichi-en kōka) is the smallest denomination of the Japanese yen currency. Historically they were initially made of both silver and gold in the early 1870s. Issues facing the Japanese government at the time included wanting to adopt the gold standard, and competing against the Mexican dollar for use in foreign trade. The decision was made to use silver one yen coins exclusively outside of Japan for trade, while gold coins were minted and used in mainland Japan.</b>
+        </div>
+        <div class="coin">
+            <img src="japcurr/5y.png" alt="5 yen coin" loading="lazy">
+            <h3>5 yen coin</h3>
+            <b>The 5-yen coin (五円硬貨, Go-en kōka) is a denomination of the Japanese yen. The current design was first minted in 1959, using Japanese characters known as the "new script" and kanji in the kaisho style, and were also minted from 1948 to 1958 using "old-script" Japanese characters in the gothic style.</b>
+        </div>
+        <div class="coin">
+            <img src="japcurr/10y.png" alt="10 yen coin" loading="lazy">
+            <h3>10 yen coin</h3>
+            <b>The 10 yen coin (十円硬貨, Jū-en kōka) is one denomination of the Japanese yen.
+
+                The obverse of the coin depicts the Phoenix Hall of Byōdō-in, a Buddhist temple in Uji, Kyoto prefecture, with the kanji for "Japan" and "Ten Yen". The reverse shows the numerals "10" and the date of issue in kanji surrounded by bay laurel leaves.</b>
+        </div>
+        <div class="coin">
+            <img src="japcurr/50y.png" alt="50 yen coin" loading="lazy">
+            <h3>50 yen coin</h3>
+            <b>The 50 yen coin (五十円硬貨, Gojū-en kōka) is a denomination of Japanese yen. These coins were first minted in 1955, and concurrently circulated alongside a banknote denomination of the same amount. 50 yen notes were eventually pulled from circulation shortly before the center of the 50 yen coin was holed. The first yen coins were made of pure nickel and slightly larger than the ones used today.</b>
+        </div>
+        <div class="coin">
+            <img src="japcurr/100y.png" alt="100 yen coin" loading="lazy">
+            <h3>100 yen coin</h3>
+            <b>The 100 yen coin (百円硬貨, Hyaku-en kōka) is a denomination of Japanese yen. These coins were first minted in 1957 using a silver alloy, before the current design was adopted with an alloy change in 1967.[1] It is the second-highest denomination coin in Japan, after the 500 yen coin. The current 100 yen coin is one of two denominations that depict the emperor's rule date in Arabic numerals rather than kanji.</b>
+        </div>
+        <div class="coin">
+            <img src="japcurr/500y.png" alt="500 yen coin" loading="lazy">
+            <h3>500 yen coin</h3>
+            <b>The 500 yen coin (Japanese: 五百円硬貨, Hepburn: Gohyaku-en kōka) is the largest denomination of Japanese yen coin issued for circulation. These coins were first struck in 1982 as the vending machine industry needed a higher valued coin for use in their machines. The denomination had previously been issued as paper currency which co-circulated with the new coins until 1994.</b>
+        </div>
+        <div class="coin">
+            <div class="note">
+            <img src="japcurr/1000yf.png" alt="1000 yen note" loading="lazy">
+            <img src="japcurr/1000yb.png" alt="1000 yen note" loading="lazy">
+            </div>
+            <h3>1000 yen note</h3>
+            <b>The ¥1,000 note is currently the lowest value yen banknote and has been used since 1945, excluding a brief period between 1946 and 1950 during the Allied occupation of Japan.</b>
+        </div>
+        <div class="coin">
+            <div class="note">
+            <img src="japcurr/5000yf.png" alt="5000 yen note" loading="lazy">
+            <img src="japcurr/5000yb.png" alt="5000 yen note" loading="lazy">
+            </div>
+            <h3>5000 yen note</h3>
+            <b>The ¥5,000 note (五千円紙幣 gosen-en shihei) is a banknote denomination of the Japanese yen. It was first introduced in Japan in 1957 to the third series of banknote releases (Series C). The latest release is Series F (2024).</b>
+        </div>
+        <div class="coin">
+            <div class="note">
+            <img src="japcurr/10000yf.png" alt="10000 yen note" loading="lazy">
+            <img src="japcurr/10000yb.png" alt="10000 yen note" loading="lazy">
+            </div>
+            <h3>10000 yen note</h3>
+            <b>The ¥10,000 note (Japanese: 1万円紙幣, Hepburn: Ichiman-En Shihei) is a yen banknote circulated in Japan. It is the highest denomination of banknote currently issued by the Bank of Japan. Apart from the commemorative 100,000 yen coin, it is the highest denomination of the Japanese yen.</b>
+        </div>    
+    </div>
     <script>
         function navigateHome() {
             window.location.href = 'index.html';
@@ -40,26 +98,36 @@
             const menu = document.getElementById('menu');
             menu.style.display = 'block';
             menu.classList.toggle('open');
-            
         }
-        // Select the close icon and the menu
-const closeIcon = document.getElementById('close');
-const menu = document.getElementById('menu');
 
-// Add an event listener to the close icon
-closeIcon.addEventListener('click', () => {
-    // Hide the menu when the close icon is clicked
-    menu.style.display = 'none';
-});
+        // Select the close icon and the menu
+        const closeIcon = document.getElementById('close');
+        const menu = document.getElementById('menu');
+
+        // Add an event listener to the close icon
+        closeIcon.addEventListener('click', () => {
+            // Hide the menu when the close icon is clicked
+            menu.style.display = 'none';
+        });
+
+        // Function to toggle the description visibility
+        function toggleDescription(coinElement) {
+            const description = coinElement.querySelector('b');
+            if (description.style.display === 'none' || description.style.display === '') {
+                description.style.display = 'block';
+            } else {
+                description.style.display = 'none';
+            }
+        }
     </script>
     <div class="footer">
         <div class="footer-content">
             <div class="about-us">
-                <h2>About us</h2>
+                <h3>About us</h3>
                 <h4>Global@currency</h4>
             </div>
             <div class="follow-us">
-                <h2>Follow us</h2>
+                <h3>Follow us</h3>
                 <div class="social-media">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i>
@@ -68,7 +136,7 @@ closeIcon.addEventListener('click', () => {
                 </div>
             </div>
             <div class="contact-us">
-                <h2>Contact us</h2>
+                <h3>Contact us</h3>
                 <div class="contact-details">
                     <i class="fa-solid fa-phone"></i>
                     <h4>+91 7999979999</h4>
